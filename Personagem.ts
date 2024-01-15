@@ -1,23 +1,14 @@
 class Personagem {
-    nome: string =  '';
-    energia: number = 0; 
-    vida: number = 0; 
-    ataque: number = 0; 
-    defesa: number = 0; 
+    constructor(
+        public nome: string, 
+        public energia: number, 
+        public vida: number, 
+        public ataque: number, 
+        public defesa: number
+        ){}
 }
 
-let tony: Personagem; 
-tony = new Personagem();
-tony.nome = 'Tony Stark'; 
-tony.ataque = 60; 
-tony.energia = 70; 
-tony.defesa = 50;
-tony.vida = 100;
-console.log('person:>>>',tony);
+let tony: Personagem = new Personagem('Tony', 60,80,70,65);
 
-let hulk: Personagem = new Personagem();
-hulk.nome = 'Hulk';
-hulk.ataque = 80; 
-hulk.energia = 80; 
-hulk.vida = 100; 
-hulk.defesa = 40; 
+let hulk: Personagem = new Personagem('Hulk',80,880,100,40);
+
