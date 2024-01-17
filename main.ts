@@ -8,7 +8,7 @@ let hulk: Personagem = new Personagem('Hulk',80,880,100);
 let teclado = prompt();
 let option:number = 0; 
 
-while(option !== 9 || tony.isDead()) {
+while(option !== 9 && !tony.isDead()) {
     console.log('*********Personagem*********');
     console.log('|1.Treinar ataque          |');
     console.log('|2.Treinar defesa          |');
