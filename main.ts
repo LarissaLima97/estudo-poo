@@ -22,25 +22,27 @@ while(option !== 9 && !tony.isDead()) {
     
     switch(option) {
         case 1:
-            tony.status();
             tony.treinarAtaque();
+            console.log(tony.status());
             break;
 
         case 2:
-            tony.status();
             tony.treinarDefesa();
+            console.log(tony.status());
             break;
         case 3:
-            tony.status();
+            console.log(tony.status());
             break;
         
         case 4:
-            tony.status();
-            tony.descansar();
+            let horas: number = +teclado('Digite o número de horas de descanso:');
+            tony.descansar(horas);
+            console.log(tony.status());
             break;
         case 5:
-            tony.status();
-            tony.batalhar();
+            let dano: number = tony.batalhar()
+            console.log(`Esta batalha custou ${dano} de energia`);
+            console.log(tony.status());
             break;
         
         case 9: 
