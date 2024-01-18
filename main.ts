@@ -9,15 +9,15 @@ let teclado = prompt();
 let option:number = 0; 
 
 while(option !== 9 && !tony.isDead()) {
-    console.log('*********Personagem*********');
-    console.log('|1.Treinar ataque          |');
-    console.log('|2.Treinar defesa          |');
-    console.log('|3.Imprimir atributos      |');
-    console.log('|4.Descansar               |');
-    console.log('|5.Batalhar                |');
-    console.log('|9.Sair                    |');
-    console.log('****************************');
-
+    console.log(`*********Personagem ${tony.nome}********`);
+    console.log('|1.Treinar ataque              |');
+    console.log('|2.Treinar defesa              |');
+    console.log('|3.Imprimir atributos          |');
+    console.log('|4.Descansar                   |');
+    console.log('|5.Batalhar                    |');
+    console.log('|9.Sair                        |');
+    console.log('********************************');
+2
     option = +teclado('Escolha uma ação: ');
     
     switch(option) {
